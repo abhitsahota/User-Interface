@@ -58,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 body {
-	margin: 40px auto;
+	margin: 120px auto;
 	width: 90%;
 }
 
@@ -74,7 +74,13 @@ body {
 
 .navbar {
 	width: 100%;
-	margin: 0 0;
+	padding-top: 20px;
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	background-color: white;
+	z-index: 10;
+	box-shadow: 0 3px 5px 3px #ccc;
 }
 
 .navlinks {
@@ -86,13 +92,27 @@ nav a {
 	text-decoration: none;
 	color: gray;
 	margin-right: 10%;
+	transition: color .5s;
+}
+
+nav a:first-child {
+	margin-left: 5%;
+}
+
+nav a:last-child {
+	margin-right: 0%;
+}
+
+nav a:hover { 
+	color: black;
 }
 
 .logoimg {
 	display: inline-block;
 	float: right;
 	position: relative;
-	transform: translateY(-25%);
+	transform: translateY(-30%);
+	margin-right: 0px; 
 }
 
 .heading {
