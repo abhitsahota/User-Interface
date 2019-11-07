@@ -65,12 +65,12 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-body {
-	margin: 120px auto;
+.wrapper {
+	margin: 100px auto;
 	width: 90%;
 }
 
-/* Header CSS */
+/* Nav CSS */
 
 .navbar {
 	width: 100%;
@@ -79,19 +79,19 @@ body {
 	top: 0; 
 	left: 0;
 	background-color: white;
-	z-index: 10;
+	z-index: 1;
 	box-shadow: 0 3px 5px 3px #ccc;
 }
 
 .navlinks {
 	display: inline-block;
-	width: calc(100% - 190px);
+	width: calc(100% - 220px);
 }
 
 nav a {
 	text-decoration: none;
 	color: gray;
-	margin-right: 10%;
+	margin-right: 5%;
 	transition: color .5s;
 }
 
@@ -110,30 +110,29 @@ nav a:hover {
 .logoimg {
 	display: inline-block;
 	float: right;
-	position: relative;
 	transform: translateY(-30%);
-	margin-right: 0px; 
+	margin-right: 20px; 
 }
+
+/* Header CSS */
 
 .heading {
 	margin: 80px 0px;
 }
 
-.headingcontent {
+.heading-content {
 	display: inline-block;
 	width: 45%;
 	text-align: center;
-	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
 	margin-right: 8%;
+	height: 60%;
 }
 
-.heading h1 {
+.heading-content h1 {
 	font-size: 80px;
 }
 
-.headingcontent button {
+.heading-content button {
 	padding: .5em 2em;
 	background-color: white;
 	border: 2px solid black;
@@ -152,24 +151,23 @@ nav a:hover {
 
 /* Section1 CSS */
 
-.section1 {
-	width: 100%;
-	margin: 40px 0px;
-	padding-top: 40px;
+main {
 	border-top: 1px solid black;
+	padding: 40px 0;
+	border-bottom: 1px solid black;
 }
 
-.box1 {
+
+.box-top {
 	display: inline-block;
 	width: 47.5%;
 }
 
-.left1 {
+.box-top:first-of-type {
 	margin-right: 4%;
 }
 
-
-.middle-img {
+.main-img {
 	text-align: center;
 	margin: 30px 0;
 }
@@ -178,22 +176,19 @@ nav a:hover {
 
 .section2 {
 	width: 100%;
-	margin: 40px 0;
-	padding-bottom: 40px;
-	border-bottom: 1px solid black;
 }
 
-.box2 {
+.box-bot {
 	display: inline-block;
 	width: 30%;
 }
 
-.left2 {
+.box-bot:first-of-type {
 	margin-right: 4%;
 }
 
-.middle2 {
-	margin-right: 4%;
+.box-bot:last-of-type {
+	margin-left: 4%;
 }
 
 /* Contact section */
